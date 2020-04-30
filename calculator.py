@@ -15,10 +15,8 @@ num2 = input_string [2]
 
 # Insert while loop here. Keep asking for equation until user quits. 
 
-# Check if user wants to quit program. 
-if input_string[0] == 'q': 
-    break
-else: 
+# Call function as long as user does not quit program. 
+while operator != 'q': 
     # Call the function determined by 'operator'. 
     if operator == '+': 
         add (num1, num2)
@@ -37,6 +35,8 @@ else:
     elif operator == '%': 
         mod (num1, num2)
     else: 
-        print ("You did not enter an available operator.")
+        # Exit WHILE loop if user entered 'q' or something irrelevant. 
+        break 
+
 
 
