@@ -23,24 +23,31 @@ while operator != 'q':
     # Call the function determined by 'operator'. 
     if operator == '+': 
         result = add (num1, num2)
+        print (result)
     elif operator == '-':
         result = subtract (num1, num2)
+        print (result)
     elif operator == '*': 
         result = multiply (num1, num2)
+        print (result)
     elif operator == '/': 
         result = divide (num1, num2)
+        print (result)
     elif operator == 'square': 
         result = square (num1, num2)
+        print (result)
     elif operator == 'cube': 
         result = cube (num1, num2)
+        print (result)
     elif operator == 'pow': 
         result = power (num1, num2) 
+        print (result)
     elif operator == '%': 
         result = mod (num1, num2)
+        print (result) 
     else: 
         # Exit WHILE loop if user entered 'q' or something irrelevant. 
         break 
-    print (result)
-    
+
 
 
